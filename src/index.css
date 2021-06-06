@@ -1,0 +1,98 @@
+body{
+  background: linear-gradient(-100deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 600% 600%;
+  -webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+  display: flex;
+  flex-direction: column;
+  font-size: 3 rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+h1{
+  color: rgba(61, 14, 10, 0.507);
+  text-align: center;
+  font-size: 100 rem;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.list-of-things-tobuy{
+  padding-top: 10px;
+  width: 400px;
+}
+
+.task-status{
+  background: rgba(208, 207, 214, 0.938);
+  padding:3px 10px;
+  font-size: 1.2rem;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+}
+
+.task-name{
+  cursor:pointer;
+}
+
+.completed-task{
+  text-decoration: line-through;
+}
+
+button{
+  border:0;
+  cursor:pointer;
+  font-size: 18px;
+  outline: 0;
+}
+
+.task-status button{
+  color: rgb(148, 20, 20);
+}
+
+input{
+  background: rgb(157, 138, 223);
+  padding: 7px 10px;
+  font-size: 1rem;
+  color: rgb(121, 16, 16);
+  outline: 0;
+  border: 0;
+  flex: 1;
+}
+
+form{
+  display: flex;
+  padding-top: 20px;
+}
+
+form button{
+  color: rgb(7, 4, 19);
+  background: rgba(70, 44, 99, 0.329);
+  font-size: large;
+  outline: 0;
+  padding: 0 15px;
+}
+
